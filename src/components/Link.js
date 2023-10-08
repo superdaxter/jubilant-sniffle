@@ -1,5 +1,5 @@
-export default function Link({ text, link, icon }) {
+export default function Link({ category, text, link }) {
     return (
-        <a href={link}><img src='/src/assets/twitch.ico' />{text}</a>
+        <a href={link}><img src='/src/assets/twitch.ico' />{category + text}</a>
     );
 }
