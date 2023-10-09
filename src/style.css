@@ -5,18 +5,11 @@
 
 body {
     /* background-color: #efe2ba; */
-    /* background-image: url('img/MacSonoma.jpg'); */
+    background-image: url('img/MacSonoma.jpg');
     font-family: "VictorMono";
     transition: all 2s;
     animation: ani2 15s infinite;
 }
-
-/* color scheme */
-/* 0C0032 */
-/* 190061 */
-/* 240090 */
-/* 3500D3 */
-/* 282828 */
 
 img {
     margin-right: 10px;
@@ -24,7 +17,7 @@ img {
 
 .main-box {
     background-color: #d79922;
-    /* background-image: url('img/MacMonterey.jpg'); */
+    background-image: url('img/MacMonterey.jpg');
     /* backdrop-filter: blur(4px); */
     /* box-shadow: 3px 3px 10px #b2b2c2; */
     width: 75%;
@@ -35,16 +28,17 @@ img {
     border-color: #c5cbe3;
     border-width: 5px;
     animation: ani1 infinite 20s;
+    display: flexbox;
 }
 
 @keyframes ani1 {
-    25% {
+    10% {
         background-position: center;
     }
 }
 
 @keyframes ani2 {
-    25% {
+    10% {
         background-position: center;
     }
 }
@@ -74,7 +68,7 @@ img {
 }
 
 .link-hub {
-    /* border: 2px solid grey; */
+    border: 2px solid grey;
     min-width: 200px;
     /* background-color: #c5cbe3; */
     /* border-radius: 12px; */
