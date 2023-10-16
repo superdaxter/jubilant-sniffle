@@ -1,8 +1,12 @@
-export default function Link({ category, text, link }) {
+import { Button } from "react-bootstrap";
+
+export default function Link({ logo, text, link }) {
   return (
-    <a href={link}>
-      <img src="/src/assets/twitch.ico" key={text} />
-      {category + text}
-    </a>
+    <Button className="links">
+      <a href={link}>
+        <img src={logo} alt="" width={25} />
+        {text}
+      </a>
+    </Button>
   );
 }

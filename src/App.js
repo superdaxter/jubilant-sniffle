@@ -1,6 +1,6 @@
 import LinkHub from "./components/LinkHub";
 import bookmarks from "./data/LinkStorage.json";
-import "./style.css";
+import { Col } from "react-bootstrap";
 
 export default function App() {
   let categories = {};
@@ -10,22 +10,17 @@ export default function App() {
       categories[bookmarks[i].Category] = 1;
     }
   }
-  console.log(categories);
+
+  const sections = Object.keys(categories).map((category) => (
+    <Col key={"div_" + category}>
+      <LinkHub key={category} data={bookmarks} title={category} />
+    </Col>
+  ));
 
   return (
     <>
       <div className="container main-box">
-        <div className="row">
-          {Object.keys(categories).map((category, index) => {
-            return (
-              <>
-                <div className="col-4" key={crypto.randomUUID()}>
-                  <LinkHub key={category} data={bookmarks} title={category} />
-                </div>
-              </>
-            );
-          })}
-        </div>
+        <div className="row">{sections}</div>
       </div>
     </>
   );
