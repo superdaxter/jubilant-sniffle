@@ -14,9 +14,11 @@ img {
 .main-box {
   background-color: #a09f9d;
   width: 75%;
-  margin: auto;
-  margin-top: 10px;
-  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
 }
 
 .sub-title {

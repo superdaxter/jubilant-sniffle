@@ -25,7 +25,12 @@ export default function LinkHub({ data, title }) {
   );
 
   const subSections = filteredData.map((d, index) => (
-    <Link logo={images[d.icon]} text={d.Text} link={d.link} />
+    <Link
+      key={crypto.randomUUID()}
+      logo={images[d.icon]}
+      text={d.Text}
+      link={d.link}
+    />
   ));
 
   return (
