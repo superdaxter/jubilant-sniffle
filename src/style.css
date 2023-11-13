@@ -5,6 +5,35 @@
 
 body {
   font-family: "VictorMono";
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+.links {
+  color: white;
+  /* background: linear-gradient(-45deg, #b88e81, #3c86e7); */
+  width: 150px;
+  margin: 5px;
+  border-radius: 0px;
+  transition: all 500ms;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+a {
+  all: unset;
 }
 
 img {
@@ -12,13 +41,8 @@ img {
 }
 
 .main-box {
-  background-color: #a09f9d;
-  width: 75%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 15px;
+  /* background-color: white; */
+  border: 2px solid rgba(255, 255, 255, 0.463);
 }
 
 .sub-title {
@@ -26,31 +50,24 @@ img {
   color: white;
 }
 
-.links {
-  justify-content: center;
-  background-color: #4056a1;
-  color: white;
-  width: 150px;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  transition: all 500ms;
-}
-
 .links:hover {
-  color: rgb(182, 182, 175);
-  background-color: #f13c20;
+  background: rgba(255, 255, 255, 0.099);
   width: 165px;
+  color: black;
 }
 
 .link-hub {
-  /* border: 2px solid grey; */
   min-width: 200px;
   margin: 5px;
   justify-content: center;
   align-items: center;
 }
 
-.rowOverride {
-  background-color: green;
+.header {
+  width: 100%;
+  display: flex;
+}
+
+.lorem {
+  text-align: center;
 }

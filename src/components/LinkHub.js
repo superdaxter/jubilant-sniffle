@@ -29,7 +29,7 @@ export default function LinkHub({ data, title }) {
       key={crypto.randomUUID()}
       logo={images[d.icon]}
       text={d.Text}
-      link={d.link}
+      link={d.Link}
     />
   ));
 
