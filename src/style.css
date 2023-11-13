@@ -71,3 +71,7 @@ img {
 .lorem {
   text-align: center;
 }
+
+.logo {
+  font: 25px "Times New Roman";
+}
