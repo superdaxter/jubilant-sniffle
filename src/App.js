@@ -22,6 +22,8 @@ export default function App() {
   return (
     <>
       <Header />
+      <br></br>
+      <br></br>
       <div className="container main-box">
         <div className="row">{sections}</div>
       </div>

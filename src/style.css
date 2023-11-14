@@ -66,6 +66,10 @@ img {
 .header {
   width: 100%;
   display: flex;
+  background-color: #23a5d573;
+  border-bottom: 1px solid white;
+  margin-bottom: 5px;
+  position: fixed;
 }
 
 .lorem {
